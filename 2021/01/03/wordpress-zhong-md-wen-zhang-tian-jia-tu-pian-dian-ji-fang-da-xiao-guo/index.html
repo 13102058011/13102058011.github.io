@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, TonyDon">
+    <meta name="keywords" content="TonyDon">
     <meta name="description" content="��˯�����ĳ���Գ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | TonyDon</title>
+    <title>TonyDon</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -450,21 +450,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-01-03
+                    2020-11-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -487,15 +487,97 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h2 id="Wordpress中Md文章添加图片点击放大效果"><a href="#Wordpress中Md文章添加图片点击放大效果" class="headerlink" title="Wordpress中Md文章添加图片点击放大效果"></a>Wordpress中Md文章添加图片点击放大效果</h2><p>在 Wordpress 中写文章我更喜欢使用 Markdown 语法写文章，轻松方便。所以我装了 <code>WP Editor.md</code> 这个插件，它可以让我们在 Wordpress 中用 Markdown 写文章</p>
+<p><img src="http://tonydon.club/wp-content/files/images/markdown/wpimgclicktobig/screenshot-1.png" alt="screenshot-1"></p>
+<p>我在 Typora 中写好文章之后，直接粘贴到 Wordpress 中，就可以直接发布文章了。</p>
+<p>在 Markdown 中插入图片的语法为：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">baidu</span>](<span class="token url">https://www.baidu.com/img/bd_logo1.png</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>直接将其复制到 Wordpress 中，虽然图片可以显示，但是不能点击进行放大。对于一些尺寸比较大的图片来说，图片会被压缩，看起来不清楚。后来我想给图片添加点击放大的功能。</p>
+<p>上网查阅，安装了 <code>Responsive Lightbox &amp; Gallery</code> 这个插件，可以添加图片灯箱效果</p>
+<p><img src="http://tonydon.club/wp-content/files/images/markdown/wpimgclicktobig/banner-772x250.jpg" alt="banner-772x250"></p>
+<p>不过插件默认是英文的，操作起来不是很友好，上网查阅在 <code>https://wpfanyi.com/</code> 网站找到了该插件的汉化包</p>
+<blockquote>
+<p>以下内容转自 <a target="_blank" rel="noopener" href="https://wpfanyi.com/plugins/responsive-lightbox">https://wpfanyi.com/plugins/responsive-lightbox</a></p>
+</blockquote>
+<p>通过 FTP 手动上传该汉化包</p>
+<p>点击下载 <a target="_blank" rel="noopener" href="https://wpfanyi.com/glotpress/bulk-export/responsive-lightbox/">responsive-lightbox-zh_CN.zip</a> 即最新版的 Responsive Lightbox &amp; Gallery 响应式灯箱画廊 中文语言包，解压后可得到两个文件，</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">responsive-lightbox-zh_CN.po
+responsive-lightbox-zh_CN.mo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>请上传到您网站的安装目录，路径为</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">/wp-content/languages/plugins<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这是基于 WordPress 的系统语言路径，注意，要能正常使用，需要看下语言文件是否正确，文件名必须是 <code>responsive-lightbox-zh_CN.mo</code> 才行。</p>
+<p>如下，上传后的完整路径。</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">/wp-content/languages/plugins/responsive-lightbox-zh_CN.mo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>操作完毕后，到网站后台的 <code>Responsive Lightbox &amp; Gallery</code> 响应式灯箱画廊 设置页面刷新即可看见变化。</p>
+<hr>
+<p>安装好插件之后却发现图片还是无法点击放大，后来仔细观察发现，想让图片可以点击放大，你的图片要包含在一个 <code>&lt;a&gt;</code> 标签内，且链接地址是图片源地址才行，如下：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>  <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.baidu.com/img/bd_logo1.png<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.baidu.com/img/bd_logo1.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>而 Markdown 中的图片语法会自动转成如下内容：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.baidu.com/img/bd_logo1.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>baidu<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>那这样该怎么办呢？我们可以给图片嵌套一个超链接，如下：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![baidu</span>](<span class="token url">https://www.baidu.com/img/bd_logo1.png</span>)</span>](https://www.baidu.com/img/bd_logo1.png)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样就会自动生成符合要求的 HTML 内容了。我们将图片修改好回到 Wordpress 中，发现图片确实可以点击放大了 </p>
+<p><img src="http://tonydon.club/wp-content/files/images/markdown/wpimgclicktobig/image-20201121191225587.png" alt="image-20201121191225587"></p>
+<p>而且图片的替代文字 <code>baidu</code> 也在下面下面显示出来了，不过这个横条好像去不掉（也可能是我不会关）有时候还是很影响查看图片的，所以干脆就不加替代文字</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![</span>](<span class="token url">https://www.baidu.com/img/bd_logo1.png</span>)</span>](https://www.baidu.com/img/bd_logo1.png)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样图片就没有下面一个横条了，看起来也舒服多了</p>
+<p><img src="http://tonydon.club/wp-content/files/images/markdown/wpimgclicktobig/image-20201121191951517.png" alt="image-20201121191951517"></p>
+<p>至此在 Wordpress 中 Md 文章添加图片点击放大效果也完成了。</p>
+<p>不过有时候一篇文章里有很多图片，每个图片都这样写未免太过麻烦，所以我用 <code>python</code> 写了一个自动转换程序，只需要将正常写好的  Markdown 文件命名为 <code>dd.md</code> 放到桌面上，运行程序就会自动读取 <code>dd.md</code> 文件，将图片格式通过正则表达式转化后在桌面上生成一个 <code>(转化后)dd.md</code> 文件，图片的格式就被自动修改好了</p>
+<p> <code>python</code> 代码如下，有需要的自取</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> re
+
+
+<span class="token comment"># 修改规则</span>
+<span class="token keyword">def</span> <span class="token function">modify</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 获取图片源地址</span>
+    url <span class="token operator">=</span> m<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>  
+    head <span class="token operator">=</span> <span class="token string">'[![]'</span>
+    
+    <span class="token comment"># 修改后的Markdown语法</span>
+    <span class="token keyword">return</span> head <span class="token operator">+</span> <span class="token string">'('</span> <span class="token operator">+</span> url <span class="token operator">+</span> <span class="token string">')'</span> <span class="token operator">+</span> <span class="token string">']'</span> <span class="token operator">+</span> <span class="token string">'('</span> <span class="token operator">+</span> url <span class="token operator">+</span> <span class="token string">')'</span>  
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment"># 读取的文件名</span>
+    file_name <span class="token operator">=</span> <span class="token string">"dd.md"</span>
+
+    <span class="token comment"># 桌面路径，需要修改为你的桌面路径</span>
+    desktop <span class="token operator">=</span> <span class="token string">r"C:/Users/你的用户名/Desktop/"</span>
+
+    <span class="token comment"># 桌面路径 + 文件名 = 文件路径</span>
+    path <span class="token operator">=</span> desktop <span class="token operator">+</span> file_name
+
+    <span class="token comment"># 以只读，UTF-8编码打开文件</span>
+    f <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 读取文件内容，然后关闭文件</span>
+    string <span class="token operator">=</span> f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 正则表达式</span>
+    rule <span class="token operator">=</span> <span class="token string">r'!\[(.*?)\]\((.*?)\)'</span>
+
+    <span class="token comment"># 通过正则表达式 rule 和修改规则 modify 来修改文件内容</span>
+    <span class="token comment"># 返回修改后的文件内容</span>
+    file_content <span class="token operator">=</span> re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span>rule<span class="token punctuation">,</span> modify<span class="token punctuation">,</span> string<span class="token punctuation">)</span>
+
+    <span class="token comment"># 创建转化后的文件路径</span>
+    path <span class="token operator">=</span> desktop <span class="token operator">+</span> <span class="token string">"(转化后)"</span> <span class="token operator">+</span> file_name
+
+    <span class="token comment"># 以只写，UTF-8编码打开文件，没有文件会自动创建新文件</span>
+    f <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 将修改后的内容写入文件，然后关闭文件，打印 OK!</span>
+    f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>file_content<span class="token punctuation">)</span>
+    f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"OK!"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
 
                 
             </div>
@@ -522,7 +604,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://13102058011.github.io/2021/01/03/hello-world/">https://13102058011.github.io/2021/01/03/hello-world/</a>
+                    <a href="https://13102058011.github.io/2021/01/03/wordpress-zhong-md-wen-zhang-tian-jia-tu-pian-dian-ji-fang-da-xiao-guo/">https://13102058011.github.io/2021/01/03/wordpress-zhong-md-wen-zhang-tian-jia-tu-pian-dian-ji-fang-da-xiao-guo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -731,7 +813,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/03/python-sheng-cheng-dong-tai-er-wei-ma-myqr-jie-shao/">
+                <a href="/2021/01/03/ru-he-tian-jia-typora-xin-zhu-ti/">
                     <div class="card-image">
                         
                         
@@ -765,16 +847,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/03/hello-world/">
+                <a href="/2021/01/03/python-sheng-cheng-dong-tai-er-wei-ma-myqr-jie-shao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -795,7 +877,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
